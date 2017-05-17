@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>jQuery-Lab - GiS-2 DMP@HS-BREMERHAVEN</title>
+        
+        <meta charset="utf-8">
+        
+        
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        
+       <style type="text/css">
+            
+           #kreis{
+               
+               width: 150px;
+               height: 150px;
+               border-radius: 50%;
+               background-color: green;
+               margin: 10px;
+               
+           }
+           
+           .viereck{
+               
+               width: 150px;
+               height:150px;
+               background-color: red;
+               margin: 10px;
+               
+               
+           }
+            
+        
+        </style>
+               
+    
+    </head>
+    
+    <body>
+      
+                
+        <div id="kreis"></div>
+        
+        <div class="viereck"></div>
+        
+        <div class="viereck"></div>
+        
+        <script type="text/javascript">
+
+            
+            $("div").click(function(){
+                
+                if($(this).attr("id") == "kreis"){
+                    
+                    alert("Kreis wurde angeklickt!");
+                    
+                }else{
+                    
+                    alert("Viereck wurde angeklickt!");
+                    
+                }
+                        
+                
+            });           
+            
+            
+            
+            
+        </script>
+        
+    
+    </body>
+    
+    
+    
+</html>

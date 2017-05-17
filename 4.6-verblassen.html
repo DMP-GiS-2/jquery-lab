@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>jQuery-Lab - GiS-2 DMP@HS-BREMERHAVEN</title>
+        
+        <meta charset="utf-8">
+        
+        
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        
+       <style type="text/css">
+            
+           
+            
+        
+        </style>
+               
+    
+    </head>
+    
+    <body>
+      
+        <button id="toggle">Text togglen</button>
+        
+        <p id="text">Dies ist etwas Text!</p>        
+        
+        
+        
+        <script type="text/javascript">
+            
+            var textAktiv = true;
+            
+
+            $("#toggle").click(function(){
+                
+                if(textAktiv){
+                    
+                    $("#text").fadeOut(5000, function(){
+                    
+                        textAktiv = false;
+                    
+                    });
+                
+                    
+                }else{
+                    
+                    $("#text").fadeIn(2000, function(){
+                        
+                        textAktiv = true;
+                        
+                    });
+                    
+                }
+                
+                
+                
+            });
+            
+            
+        </script>
+        
+    
+    </body>
+    
+    
+    
+</html>

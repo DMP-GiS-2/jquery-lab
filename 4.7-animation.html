@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>jQuery-Lab - GiS-2 DMP@HS-BREMERHAVEN</title>
+        
+        <meta charset="utf-8">
+        
+        
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        
+       <style type="text/css">
+            
+           #kreis {
+               
+               width: 150px;
+               height:150px;
+               border-radius: 50%;
+               background-color: green;
+               
+               
+           }
+            
+        
+        </style>
+               
+    
+    </head>
+    
+    <body>
+      
+       <div id="kreis"></div>     
+        
+        
+        
+        <script type="text/javascript">
+            
+           
+            $("#kreis").click(function(){
+                
+                $(this).animate({width: "400px",
+                      height: "400px",
+                      marginLeft:"100px",
+                      marginTop:"100px",
+                      }, 500, function(){
+                                            
+                        $(this).css("background-color", "red");
+                    
+                    });
+  
+            });
+            
+            
+            
+            
+        </script>
+        
+    
+    </body>
+    
+    
+    
+</html>
